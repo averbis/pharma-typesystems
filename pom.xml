@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>pharma-typesystems</artifactId>
+    <version>0.16.0-SNAPSHOT</version>
+
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>The UIMA type systems of the Averbis pharma components</description>
+	<url>https://github.com/averbis/pharma-typesystems</url>
+
+	<parent>
+		<groupId>de.averbis.textanalysis</groupId>
+		<artifactId>parent-pom-typesystems</artifactId>
+		<version>3.21.0-SNAPSHOT</version>
+	</parent>
+
+	<packaging>pom</packaging>
+	
+	<properties>
+		<core-typesystems-version>3.21.0-SNAPSHOT</core-typesystems-version>
+		<health-typesystems-version>2.25.0-SNAPSHOT</health-typesystems-version>
+	</properties>
+	
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<developers>
+	    <developer>
+			<email>info@averbis.com</email>
+			<organization>Averbis</organization>
+			<organizationUrl>https://averbis.com/</organizationUrl>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection>scm:git:git://github.com/averbis/pharma-typesystems</connection>
+		<developerConnection>scm:git:git@github.com:averbis/pharma-typesystems.git</developerConnection>
+		<url>https://github.com/averbis/pharma-typesystems</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<modules>
+		<module>idmp-typesystem</module>
+		<module>pharma-concept-typesystem</module>
+		<module>adverse-event-typesystem</module>
+	</modules>
+	
+</project>

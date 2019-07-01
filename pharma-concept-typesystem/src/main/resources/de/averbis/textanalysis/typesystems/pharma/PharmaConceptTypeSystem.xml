@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>de.averbis.textanalysis.pharma.PharmaConceptTypeSystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <imports>
+    	<import name="de.averbis.textanalysis.typesystems.AverbisTypeSystem"/>
+    </imports>
+  <types>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.MedDRAConcept</name>
+      <description/>
+      <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.XEVMPDConcept</name>
+      <description/>
+      <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.SubstanceConcept</name>
+      <description/>
+      <supertypeName>de.averbis.textanalysis.types.pharma.XEVMPDConcept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.AdministrationConcept</name>
+      <description/>
+      <supertypeName>de.averbis.textanalysis.types.pharma.XEVMPDConcept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.DoseFormConcept</name>
+      <description/>
+      <supertypeName>de.averbis.textanalysis.types.pharma.XEVMPDConcept</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

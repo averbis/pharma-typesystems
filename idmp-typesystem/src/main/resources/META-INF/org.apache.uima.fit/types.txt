@@ -1,0 +1,4 @@
+classpath*:de/averbis/textanalysis/typesystems/pharma/SmpcTypeSystem.xml
+classpath*:de/averbis/textanalysis/typesystems/pharma/SmpcSectionTypeSystem.xml
+classpath*:de/averbis/textanalysis/typesystems/pharma/Module3TypeSystem.xml
+classpath*:de/averbis/textanalysis/typesystems/pharma/IdmpTypeSystem.xml
