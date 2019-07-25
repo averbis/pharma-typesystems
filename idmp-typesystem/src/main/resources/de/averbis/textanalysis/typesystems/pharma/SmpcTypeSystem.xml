@@ -735,6 +735,19 @@
       </features>
     </typeDescription>
     <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.Substances</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>concepts</name>
+          <description>concept</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>de.averbis.extraction.types.Concept</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.ActiveSubstance</name>
       <description/>
       <supertypeName>de.averbis.textanalysis.types.pharma.smpc.Substance</supertypeName>
@@ -785,7 +798,7 @@
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.Excipient</name>
       <description/>
-      <supertypeName>de.averbis.textanalysis.types.pharma.smpc.Substance</supertypeName>
+      <supertypeName>de.averbis.textanalysis.types.pharma.smpc.Substances</supertypeName>
       <features>
         <featureDescription>
           <name>form</name>
