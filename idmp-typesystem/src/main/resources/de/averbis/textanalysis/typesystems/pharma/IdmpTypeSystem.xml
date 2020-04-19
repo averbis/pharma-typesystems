@@ -154,6 +154,11 @@
       <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
     </typeDescription>
     <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.idmp.SpecialPrecautionsForStorageType</name>
+      <description/>
+      <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
+    </typeDescription>
+    <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.idmp.PackageDescription</name>
       <description/>
       <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
