@@ -791,8 +791,31 @@
           <description/>
           <rangeTypeName>de.averbis.textanalysis.types.measurement.Measurement</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>unitOfPresentation</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfPresentation</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.UnitOfPresentation</name>
+      <description/>
+      <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.ConcentrationStrength</name>
       <description/>
