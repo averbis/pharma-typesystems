@@ -967,8 +967,18 @@
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.PaediatricUseIndicator</name>
       <description/>
-      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
       <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
         <featureDescription>
           <name>normalized</name>
           <description/>
