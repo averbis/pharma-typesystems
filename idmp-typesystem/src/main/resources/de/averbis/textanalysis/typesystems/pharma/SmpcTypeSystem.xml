@@ -779,6 +779,11 @@
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>de.averbis.textanalysis.types.pharma.smpc.ConcentrationStrength</elementType>
         </featureDescription>
+        <featureDescription>
+          <name>role</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.IngredientRole</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
@@ -838,9 +843,30 @@
           <description/>
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>role</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.IngredientRole</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
-
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.IngredientRole</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.PharmacodynamicClassificationSystem</name>
       <description/>
