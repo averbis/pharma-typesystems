@@ -801,6 +801,11 @@
           <description/>
           <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfPresentation</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>unitOfMeasurement</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfMeasurement</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
@@ -830,6 +835,11 @@
           <name>measurement</name>
           <description/>
           <rangeTypeName>de.averbis.textanalysis.types.measurement.Measurement</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>unitOfMeasurement</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfMeasurement</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
@@ -886,6 +896,11 @@
           <name>form</name>
           <description/>
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>unitOfMeasurement</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfMeasurement</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
@@ -1227,6 +1242,24 @@
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
         </featureDescription>
       </features>  
+    </typeDescription>
+
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.UnitOfMeasurement</name>
+      <description/>
+      <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
 
   </types>
