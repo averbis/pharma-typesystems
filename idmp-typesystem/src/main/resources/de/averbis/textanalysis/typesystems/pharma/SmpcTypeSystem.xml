@@ -267,7 +267,7 @@
           <elementType>de.averbis.textanalysis.types.pharma.smpc.Comorbidity</elementType>
         </featureDescription>
         <featureDescription>
-          <name>intendedEffect</name>
+          <name>intendedEffectTerm</name>
           <description/>
           <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.IntendedEffect</rangeTypeName>
         </featureDescription>
