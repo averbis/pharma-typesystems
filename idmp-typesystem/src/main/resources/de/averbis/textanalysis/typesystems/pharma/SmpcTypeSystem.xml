@@ -898,6 +898,11 @@
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
         </featureDescription>
         <featureDescription>
+          <name>measurement</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.measurement.Measurement</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
           <name>unitOfMeasurement</name>
           <description/>
           <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfMeasurement</rangeTypeName>
