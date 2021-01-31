@@ -31,6 +31,11 @@
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
+          <name>documentType</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
           <name>medicinalProduct</name>
           <description/>
           <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.MedicinalProduct</rangeTypeName>
@@ -70,6 +75,11 @@
           <name>additionalMonitoringIndicator</name>
           <description/>
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>medicinalProductCategory</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.MedicinalProductCategory</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>medicinalProductClassification</name>
@@ -257,9 +267,9 @@
           <elementType>de.averbis.textanalysis.types.pharma.smpc.Comorbidity</elementType>
         </featureDescription>
         <featureDescription>
-          <name>intendedEffect</name>
+          <name>intendedEffectTerm</name>
           <description/>
-          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.IntendedEffect</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>timingDuration</name>
@@ -365,6 +375,23 @@
       <name>de.averbis.textanalysis.types.pharma.smpc.Comorbidity</name>
       <description/>
       <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.IntendedEffect</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
 
     <typeDescription>
@@ -862,6 +889,23 @@
     </typeDescription>
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.IngredientRole</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.MedicinalProductCategory</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
