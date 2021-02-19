@@ -1043,9 +1043,9 @@
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
         </featureDescription>
         <featureDescription>
-          <name>country</name>
+          <name>countryTerm</name>
           <description/>
-          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.Country</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
@@ -1107,7 +1107,20 @@
       <name>de.averbis.textanalysis.types.pharma.smpc.Country</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
+    
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.PostAddress</name>
       <description/>
