@@ -280,6 +280,13 @@
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
         </featureDescription>
       </features>
+      <features>
+        <featureDescription>
+          <name>operationTypeTerms</name>
+          <description>operationTypeTerms</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
 
     <typeDescription>
@@ -321,13 +328,23 @@
       <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>de.averbis.textanalysis.types.pharma.module3.OperationType</name>
+      <name>de.averbis.textanalysis.types.pharma.module3.OperationTypeTerm</name>
       <description/>
       <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
       <features>
         <featureDescription>
           <name>value</name>
           <description>value</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
