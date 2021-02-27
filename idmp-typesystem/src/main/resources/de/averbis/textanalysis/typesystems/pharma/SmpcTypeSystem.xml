@@ -11,7 +11,80 @@
     <import name="de.averbis.textanalysis.typesystems.TemporalTypeSystem"/>
     <import name="de.averbis.textanalysis.typesystems.pharma.PharmaConceptTypeSystem"/>
   </imports>
+  
   <types>
+
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.Organization</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+      	<featureDescription>
+      		<name>locationID</name>
+        	<description>
+        		LOCATION_ID in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>organizationID</name>
+        	<description>
+        		ORGANISATION_ID in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>name</name>
+        	<description>
+        		NAME in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>addressCity</name>
+        	<description>
+        		ADDRESS_CITY in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>addressCountryCode</name>
+        	<description>
+        		ADDRESS_COUNTRY_CODE in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>addressCountryDisplayName</name>
+        	<description>
+        		ADDRESS_COUNTRY_DISPLAY_NAME in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>addressLanguage</name>
+        	<description>
+        		ADDRESS_LANGUAGE in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>addressLine1</name>
+        	<description>
+        		ADDRESS_LINE_1 in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      	<featureDescription>
+      		<name>addressPostalCode</name>
+        	<description>
+        		ADDRESS_POSTAL_CODE in OMS organizations
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.SmPCDocument</name>
       <description/>
@@ -22,6 +95,11 @@
           <description/>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>de.averbis.textanalysis.types.pharma.smpc.SmPC</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>documentLanguage</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
@@ -683,8 +761,13 @@
       <features>
         <featureDescription>
           <name>organisationId</name>
-          <description/>
+          <description>DEPRECATED?</description>
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>organization</name>
+          <description>Organization from OMS organizations</description>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.Organization</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>authorisationHolderName</name>
