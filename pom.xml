@@ -2,7 +2,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>pharma-typesystems</artifactId>
-    <version>1.7.0-SNAPSHOT</version>
+    <version>1.7.0</version>
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>The UIMA type systems of the Averbis pharma components</description>
@@ -41,7 +41,7 @@
 		<connection>scm:git:git://github.com/averbis/pharma-typesystems</connection>
 		<developerConnection>scm:git:git@github.com:averbis/pharma-typesystems.git</developerConnection>
 		<url>https://github.com/averbis/pharma-typesystems</url>
-		<tag>HEAD</tag>
+		<tag>pharma-typesystems-1.7.0</tag>
 	</scm>
 	
 	<modules>
