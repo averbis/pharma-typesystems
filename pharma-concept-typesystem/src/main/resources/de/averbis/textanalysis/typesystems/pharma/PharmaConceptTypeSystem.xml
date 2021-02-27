@@ -43,5 +43,21 @@
       <description/>
       <supertypeName>de.averbis.textanalysis.types.pharma.XEVMPDConcept</supertypeName>
     </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.OrganizationNameConcept</name>
+      <description>
+      	Concept for names of pharma organizations as in OMS organizations controlled vocabulary.
+      	LOCATION_ID is stored in conceptID
+      </description>
+      <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.OrganizationAddressConcept</name>
+      <description>
+      	Concept for addresses of pharma organizations as in OMS organizations controlled vocabulary.
+      	LOCATION_ID is stored in conceptID
+      </description>
+      <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
+    </typeDescription>
   </types>
 </typeSystemDescription>
