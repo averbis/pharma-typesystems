@@ -15,7 +15,7 @@
   <types>
 
     <typeDescription>
-      <name>de.averbis.textanalysis.types.pharma.smpc.Organization</name>
+      <name>de.averbis.textanalysis.types.pharma.Organization</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
@@ -767,7 +767,7 @@
         <featureDescription>
           <name>organization</name>
           <description>Organization from OMS organizations</description>
-          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.Organization</rangeTypeName>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.Organization</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>authorisationHolderName</name>

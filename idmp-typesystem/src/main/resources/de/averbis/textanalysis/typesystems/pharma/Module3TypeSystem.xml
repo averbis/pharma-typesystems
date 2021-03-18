@@ -266,6 +266,12 @@
           <description>country</description>
           <rangeTypeName>de.averbis.textanalysis.types.pharma.module3.Country</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>organization</name>
+          <description>Organization from OMS organizations (type is in smpc because it was implemented there first)</description>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.Organization</rangeTypeName>
+        </featureDescription>
+        
       </features>
     </typeDescription>
 
