@@ -17,8 +17,9 @@
 	<packaging>pom</packaging>
 	
 	<properties>
-		<core-typesystems-version>4.0.0-SNAPSHOT</core-typesystems-version>
-		<health-typesystems-version>3.0.0-SNAPSHOT</health-typesystems-version>
+		<uima-version>3.1.1</uima-version>
+		<core-typesystems-version>4.0.0-alpha-2</core-typesystems-version>
+		<health-typesystems-version>3.0.0-beta-2.1</health-typesystems-version>
 	</properties>
 	
 	<licenses>
