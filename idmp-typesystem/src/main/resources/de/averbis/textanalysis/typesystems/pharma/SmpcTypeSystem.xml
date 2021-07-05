@@ -133,8 +133,18 @@
           <description/>
           <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PharmaceuticalForm</rangeTypeName>
         </featureDescription>
-        <!-- <featureDescription> <name>packagedMedicinalProduct</name> <description/> <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PackagedMedicinalProduct</rangeTypeName> </featureDescription> <featureDescription> <name>packageItem</name>
-        <description/> <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PackageItem</rangeTypeName> </featureDescription> -->
+        <featureDescription>
+          <name>packagedMedicinalProduct</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PackagedMedicinalProduct</rangeTypeName>
+        </featureDescription>
+		<!-- 
+        <featureDescription>
+          <name>packageItem</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PackageItem</rangeTypeName>
+        </featureDescription>
+        -->
       </features>
     </typeDescription>
 
@@ -667,8 +677,9 @@
         </featureDescription>
       </features>
     </typeDescription>
+
     <typeDescription>
-      <name>de.averbis.textanalysis.types.pharma.smpc.Container</name>
+      <name>de.averbis.textanalysis.types.pharma.smpc.PackageItemContainer</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
@@ -677,14 +688,141 @@
           <description/>
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+    	  <name>quantity</name>
+    	  <description/>
+    	  <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+    	</featureDescription>
+        <featureDescription>
+          <name>packageItemContainerType</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PackageItemContainerType</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>packageItemContainerMaterial</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.Material</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
-    <!-- <typeDescription> <name>de.averbis.textanalysis.types.pharma.smpc.PackagedMedicinalProduct</name> <description/> <supertypeName>uima.tcas.Annotation</supertypeName> <features> <featureDescription> <name>packageDescription</name> <description/>
-    <rangeTypeName>uima.tcas.Annotation</rangeTypeName> </featureDescription> </features> </typeDescription> <typeDescription> <name>de.averbis.textanalysis.types.pharma.smpc.PackageItem</name> <description/>
-    <supertypeName>uima.tcas.Annotation</supertypeName> <features> <featureDescription> <name>packageItemType</name> <description/> <rangeTypeName>uima.tcas.Annotation</rangeTypeName> </featureDescription> <featureDescription>
-    <name>packageItemQuantity</name> <description/> <rangeTypeName>uima.tcas.Annotation</rangeTypeName> </featureDescription> <featureDescription> <name>shelfLifeStorage</name> <description/>
-    <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.ShelfLifeStorage</rangeTypeName> </featureDescription> <featureDescription> <name>manufacturedItem</name> <description/>
-    <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.ManufacturedItem</rangeTypeName> </featureDescription> </features> </typeDescription> -->
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.PackageItemContainerType</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.Material</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.PackageItemComponent</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+    	  <name>quantity</name>
+    	  <description/>
+    	  <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+    	</featureDescription>
+        <featureDescription>
+          <name>packageItemComponentType</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PackageItemComponentType</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>packageItemComponentMaterial</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.Material</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.PackageItemComponentType</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+
+    
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.PackagedMedicinalProduct</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>packageDescription</name>
+          <description/>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>packageItems</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>de.averbis.textanalysis.types.pharma.smpc.PackageItem</elementType>
+        </featureDescription>          
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.smpc.PackageItem</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>packageItemContainer</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.PackageItemContainer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>packageItemComponents</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>de.averbis.textanalysis.types.pharma.smpc.PackageItemComponent</elementType>
+        </featureDescription>          
+    	<featureDescription>
+    	  <name>manufacturedItem</name>
+    	  <description/>
+    	  <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.ManufacturedItem</rangeTypeName>
+    	</featureDescription>
+      </features>
+    </typeDescription>
+    
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.smpc.ShelfLifeStorage</name>
       <description/>
