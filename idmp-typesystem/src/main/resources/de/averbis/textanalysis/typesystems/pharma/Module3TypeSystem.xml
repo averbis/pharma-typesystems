@@ -79,6 +79,11 @@
           <description>shape</description>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>unitOfPresentation</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfPresentation</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
@@ -135,6 +140,11 @@
           <name>roles</name>
           <description>functions</description>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>ingredientRole</name>
+          <description>Ingredient role from RMS CV</description>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.IngredientRole</rangeTypeName>
         </featureDescription>
 
       </features>
