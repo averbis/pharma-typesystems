@@ -80,6 +80,11 @@
       <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
     </typeDescription>
     <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.idmp.ActiveSubstance_UnitOfPresentation</name>
+      <description/>
+      <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
+    </typeDescription>
+    <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.idmp.ActiveSubstance_ConcentrationStrength</name>
       <description/>
       <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
@@ -150,6 +155,11 @@
     </typeDescription>
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.idmp.SpecialPrecautionsForStorage</name>
+      <description/>
+      <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.idmp.SpecialPrecautionsForStorageType</name>
       <description/>
       <supertypeName>de.averbis.textanalysis.types.pharma.idmp.IdmpEntity</supertypeName>
     </typeDescription>

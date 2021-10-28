@@ -79,6 +79,11 @@
           <description>shape</description>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>unitOfPresentation</name>
+          <description/>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.UnitOfPresentation</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
@@ -135,6 +140,11 @@
           <name>roles</name>
           <description>functions</description>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>ingredientRole</name>
+          <description>Ingredient role from RMS CV</description>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.smpc.IngredientRole</rangeTypeName>
         </featureDescription>
 
       </features>
@@ -266,6 +276,12 @@
           <description>country</description>
           <rangeTypeName>de.averbis.textanalysis.types.pharma.module3.Country</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>organization</name>
+          <description>Organization from OMS organizations (type is in smpc because it was implemented there first)</description>
+          <rangeTypeName>de.averbis.textanalysis.types.pharma.Organization</rangeTypeName>
+        </featureDescription>
+        
       </features>
     </typeDescription>
 
@@ -277,6 +293,13 @@
         <featureDescription>
           <name>operationTypes</name>
           <description>operationTypes</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+        </featureDescription>
+      </features>
+      <features>
+        <featureDescription>
+          <name>operationTypeTerms</name>
+          <description>operationTypeTerms</description>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
         </featureDescription>
       </features>
@@ -321,13 +344,23 @@
       <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>de.averbis.textanalysis.types.pharma.module3.OperationType</name>
+      <name>de.averbis.textanalysis.types.pharma.module3.OperationTypeTerm</name>
       <description/>
       <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
       <features>
         <featureDescription>
           <name>value</name>
           <description>value</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>prefTerm</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>code</name>
+          <description/>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>

@@ -12,6 +12,16 @@
       <name>de.averbis.textanalysis.types.pharma.MedDRAConcept</name>
       <description/>
       <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
+      <features>
+      	<featureDescription>
+      		<name>lltID</name>
+        	<description>
+        		The low-level term id for this concept. Low-level terms are treated
+        		as synonyms in the terminology.	This ID is based on the matchedTerm.
+        	</description>
+        	<rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
     <typeDescription>
       <name>de.averbis.textanalysis.types.pharma.XEVMPDConcept</name>
@@ -32,6 +42,22 @@
       <name>de.averbis.textanalysis.types.pharma.DoseFormConcept</name>
       <description/>
       <supertypeName>de.averbis.textanalysis.types.pharma.XEVMPDConcept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.OrganizationNameConcept</name>
+      <description>
+      	Concept for names of pharma organizations as in OMS organizations controlled vocabulary.
+      	LOCATION_ID is stored in conceptID
+      </description>
+      <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>de.averbis.textanalysis.types.pharma.OrganizationAddressConcept</name>
+      <description>
+      	Concept for addresses of pharma organizations as in OMS organizations controlled vocabulary.
+      	LOCATION_ID is stored in conceptID
+      </description>
+      <supertypeName>de.averbis.extraction.types.Concept</supertypeName>
     </typeDescription>
   </types>
 </typeSystemDescription>
