@@ -11,14 +11,15 @@
 	<parent>
 		<groupId>de.averbis.textanalysis</groupId>
 		<artifactId>parent-pom-typesystems</artifactId>
-		<version>3.22.0</version>
+		<version>4.0.1</version>
 	</parent>
 
 	<packaging>pom</packaging>
 	
 	<properties>
-		<core-typesystems-version>3.23.2</core-typesystems-version>
-		<health-typesystems-version>2.31.1</health-typesystems-version>
+		<uima-version>3.2.0</uima-version>
+		<core-typesystems-version>4.1.0</core-typesystems-version>
+		<health-typesystems-version>3.2.1</health-typesystems-version>
 	</properties>
 	
 	<licenses>
