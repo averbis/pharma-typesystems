@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.averbis.textanalysis</groupId>
+		<artifactId>pharma-typesystems</artifactId>
+		<version>2.1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>pharma-typesystems-bom</artifactId>
+	<packaging>pom</packaging>
+
+	<name>Averbis Pharma Type Systems :: BOM</name>
+	<description>Bill of materials</description>
+	<url>https://github.com/averbis/pharma-typesystems</url>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>eu.maveniverse.maven.plugins</groupId>
+				<artifactId>bom-builder3</artifactId>
+				<version>1.2.0</version>
+				<executions>
+					<execution>
+						<id>build-bom</id>
+						<goals>
+							<goal>build-bom</goal>
+						</goals>
+						<configuration>
+							<attach>true</attach>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
