@@ -80,4 +80,19 @@
 		<module>pharma-concept-typesystem</module>
 		<module>adverse-event-typesystem</module>
 	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+				<version>0.8.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<deploymentName>Averbis Pharma Type Systems</deploymentName>
+					<publishingServerId>central</publishingServerId>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
