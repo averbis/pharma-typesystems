@@ -1,27 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>pharma-typesystems</artifactId>
-    <version>2.1.0-SNAPSHOT</version>
-
-	<name>${project.groupId}:${project.artifactId}</name>
-	<description>The UIMA type systems of the Averbis pharma components</description>
-	<url>https://github.com/averbis/pharma-typesystems</url>
 
 	<parent>
 		<groupId>de.averbis.textanalysis</groupId>
 		<artifactId>parent-pom-typesystems</artifactId>
-		<version>4.0.1</version>
+		<version>4.3.0</version>
 	</parent>
 
+	<artifactId>pharma-typesystems</artifactId>
+	<version>2.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
-	<properties>
-		<uima-version>3.2.0</uima-version>
-		<core-typesystems-version>4.1.0</core-typesystems-version>
-		<health-typesystems-version>3.2.1</health-typesystems-version>
-	</properties>
-	
+
+	<name>Averbis Pharma Type Systems :: Root</name>
+	<description>The UIMA type systems of the Averbis pharma components</description>
+	<url>https://github.com/averbis/pharma-typesystems</url>
+
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
@@ -29,26 +24,60 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	
+
 	<developers>
-	    <developer>
+		<developer>
+			<id>averbis</id>
 			<email>info@averbis.com</email>
 			<organization>Averbis</organization>
 			<organizationUrl>https://averbis.com/</organizationUrl>
 		</developer>
 	</developers>
-	
+
 	<scm>
 		<connection>scm:git:git://github.com/averbis/pharma-typesystems</connection>
 		<developerConnection>scm:git:git@github.com:averbis/pharma-typesystems.git</developerConnection>
 		<url>https://github.com/averbis/pharma-typesystems</url>
 		<tag>HEAD</tag>
 	</scm>
-	
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/averbis/pharma-typesystems</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>github-parent-pom-typesystems</id>
+			<url>https://maven.pkg.github.com/averbis/parent-pom-typesystems</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>github-core-typesystems</id>
+			<url>https://maven.pkg.github.com/averbis/core-typesystems</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<modules>
+		<module>pharma-typesystems-bom</module>
+		<module>pharma-typesystems-parent</module>
+		<module>pharma-typesystems-core</module>
 		<module>idmp-typesystem</module>
 		<module>pharma-concept-typesystem</module>
 		<module>adverse-event-typesystem</module>
 	</modules>
-	
 </project>

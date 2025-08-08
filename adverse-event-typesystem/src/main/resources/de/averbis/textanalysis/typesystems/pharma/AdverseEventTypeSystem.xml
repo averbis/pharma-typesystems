@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-    <name>de.averbis.textanalysis.pharma.AdverseEventTypeSystem</name>
-    <description/>
-    <version>1.0</version>
-    <vendor/>
-    <imports>
-    	<import name="de.averbis.textanalysis.typesystems.AverbisTypeSystem"/>
-    </imports>
-  <types>
-    <typeDescription>
-      <name>de.averbis.textanalysis.types.pharma.AdverseEvent</name>
-      <description/>
-      <supertypeName>de.averbis.extraction.types.CoreAnnotation</supertypeName>
-    <features>
-        <featureDescription>
-          <name>concept</name>
-          <description/>
-          <rangeTypeName>de.averbis.extraction.types.Concept</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>label</name>
-          <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>serious</name>
-          <description/>
-          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-        </featureDescription>
-      </features>
-    </typeDescription>
-  </types>
+  <name>de.averbis.textanalysis.pharma.AdverseEventTypeSystem</name>
+  <description/>
+  <version>1.0</version>
+  <vendor/>
+  <imports>
+    <import name="de.averbis.textanalysis.types.pharma.AdverseEventTypeSystem"/>
+  </imports>
 </typeSystemDescription>
